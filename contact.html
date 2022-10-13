@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UIB Final Project</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header-3">
+      <nav>
+        <a href="index.html"
+          ><img src="./images/DCI__logo_wordmark_blue.png" alt=""
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#course">COURSE</a></li>
+            <li><a href="#campus">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h2>Contact Us</h2>
+    </section>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9710.141622551531!2d13.4862127!3d52.5237465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x700b4ec74a47a34d!2sDCI%20-%20Digital%20Career%20Institute%20gGmbH!5e0!3m2!1sen!2sde!4v1665582270983!5m2!1sen!2sde"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+               <i class="fa fa-phone"></i>
+               <span>
+               <h4>+49 1234567</h4>
+               <p>Monday to Friday, from 9AM to 4PM</p>
+            </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                    <h4>email@dci.org</h4>
+                    <p>Email us</p>
+                </span>
+                     </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="">
+                  <h4>Leave Your Comment</h4>
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter your email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment"></textarea>
+                    <button>Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
